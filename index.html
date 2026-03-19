@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Adarsh Vishwakarma — CS Student · AI/ML · Cybersecurity · Full Stack"/>
+  <title>Adarsh Vishwakarma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div id="cur"></div>
+<div id="cur-trail"></div>
+
+<!-- ══════════════════════════
+     NAV
+══════════════════════════ -->
+<nav id="nav">
+  <a href="#" class="logo">
+    <span class="l1">ADARSH</span><span class="l3">.</span><span class="l2">DEV</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="drawer" id="drawer">
+  <a href="#projects"  onclick="closeDrawer()">Projects</a>
+  <a href="#skills"    onclick="closeDrawer()">Skills</a>
+  <a href="#education" onclick="closeDrawer()">Education</a>
+  <a href="#contact"   onclick="closeDrawer()">Contact</a>
+</div>
+
+<!-- ══════════════════════════
+     HERO
+══════════════════════════ -->
+<div id="hero">
+
+  <div class="hero-left">
+    <div class="hero-status">
+      <div class="status-dot"></div>
+      System Online — Open to Opportunities
+    </div>
+
+    <div class="hero-role">B.Tech CSE &nbsp;·&nbsp; 3rd Year &nbsp;·&nbsp; Nagaland University</div>
+
+    <div class="hero-name">
+      <span class="line"><span>Adarsh</span></span>
+      <span class="line"><span>Vishwakarma</span></span>
+    </div>
+
+    <p class="hero-bio">
+      CS student passionate about software development, AI&nbsp;&amp;&nbsp;ML,
+      and cybersecurity. I build intelligent systems and real-world applications —
+      from face recognition to secure full-stack platforms.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-cyan">◈ &nbsp;Projects</a>
+      <a href="resume.pdf" download class="btn btn-amber">↓ &nbsp;Resume</a>
+      <a href="https://github.com/ADARSH-VISHWAKARMA91" target="_blank" rel="noopener" class="btn btn-green">⌥ &nbsp;GitHub</a>
+      <a href="#contact" class="btn">⌁ &nbsp;Contact</a>
+    </div>
+
+    <div class="hero-tags">
+      <span class="htag">Full Stack</span>
+      <span class="htag">AI / ML</span>
+      <span class="htag">Cybersecurity</span>
+    </div>
+  </div>
+
+  <!-- Photo -->
+  <div class="hero-right">
+    <div class="photo-wrap">
+      <div class="photo-glow"></div>
+      <div class="photo-box"></div>
+      <div class="c1"></div>
+      <div class="c2"></div>
+      <div class="photo-inner">
+        <img src="adarsh.jpeg" alt="Adarsh Vishwakarma"/>
+      </div>
+      <div class="photo-scan"></div>
+      <div class="photo-label">[ ID_VERIFIED ]</div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════
+     PROJECTS
+══════════════════════════ -->
+<section id="projects">
+  <div class="sec-head reveal">
+    <span class="sec-id">// 01</span>
+    <h2 class="sec-title">Projects</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="proj-grid">
+
+    <a href="#" class="glass proj-card c-green reveal">
+      <div class="proj-top">
+        <span class="proj-id">PRJ_001</span>
+        <span class="proj-type">AI · Computer Vision</span>
+      </div>
+      <div class="proj-title">Face Recognition Attendance System</div>
+      <div class="proj-desc">Automated real-time attendance via webcam face detection. Matches live captures against stored datasets and logs attendance instantly.</div>
+      <div class="proj-stack">
+        <span class="chip">Python</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">ML</span>
+        <span class="chip">Google Colab</span>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+
+    <a href="#" class="glass proj-card c-cyan reveal">
+      <div class="proj-top">
+        <span class="proj-id">PRJ_002</span>
+        <span class="proj-type">Machine Learning</span>
+      </div>
+      <div class="proj-title">Student Performance Prediction</div>
+      <div class="proj-desc">ML model predicting academic outcomes from study hours, attendance, and past results. Trained on historical data to generate actionable student insights.</div>
+      <div class="proj-stack">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Scikit-learn</span>
+        <span class="chip">Matplotlib</span>
+        <span class="chip">Google Colab</span>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+
+    <a href="#" class="glass proj-card c-mag reveal">
+      <div class="proj-top">
+        <span class="proj-id">PRJ_003</span>
+        <span class="proj-type">Full Stack</span>
+      </div>
+      <div class="proj-title">User Authentication System</div>
+      <div class="proj-desc">Secure full-stack web app with registration, session-based login, and MySQL backend. Demonstrates secure auth flows and complete database integration.</div>
+      <div class="proj-stack">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">PHP</span>
+        <span class="chip">MySQL</span>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+
+    <a href="#" class="glass proj-card c-amber reveal">
+      <div class="proj-top">
+        <span class="proj-id">PRJ_004</span>
+        <span class="proj-type">Machine Learning</span>
+      </div>
+      <div class="proj-title">Fake News Detection System</div>
+      <div class="proj-desc">Classification model that analyses news articles and flags misinformation. Uses text feature extraction and Scikit-learn to distinguish real from fake content.</div>
+      <div class="proj-stack">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Scikit-learn</span>
+        <span class="chip">Google Colab</span>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     SKILLS
+══════════════════════════ -->
+<section id="skills">
+  <div class="sec-head reveal">
+    <span class="sec-id">// 02</span>
+    <h2 class="sec-title">Skills &amp; Stack</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="glass skill-panel reveal">
+      <div class="panel-head">
+        <span class="panel-icon">💻</span>
+        <span class="panel-title t-cyan">Languages</span>
+      </div>
+      <div class="chips">
+        <span class="sk s-green">Python</span>
+        <span class="sk s-green">JavaScript</span>
+        <span class="sk s-green">PHP</span>
+        <span class="sk s-green">C</span>
+        <span class="sk s-green">C++</span>
+        <span class="sk s-green">HTML5</span>
+        <span class="sk s-green">CSS3</span>
+        <span class="sk s-green">MySQL</span>
+      </div>
+    </div>
+
+    <div class="glass skill-panel reveal">
+      <div class="panel-head">
+        <span class="panel-icon">🌐</span>
+        <span class="panel-title t-magenta">Web Development</span>
+      </div>
+      <div class="chips">
+        <span class="sk s-mag">Frontend Dev</span>
+        <span class="sk s-mag">Backend Dev</span>
+        <span class="sk s-mag">Full Stack</span>
+        <span class="sk s-mag">Database Design</span>
+        <span class="sk s-mag">REST APIs</span>
+        <span class="sk s-mag">PHP &amp; MySQL</span>
+      </div>
+    </div>
+
+    <div class="glass skill-panel reveal">
+      <div class="panel-head">
+        <span class="panel-icon">🤖</span>
+        <span class="panel-title t-cyan">AI &amp; Machine Learning</span>
+      </div>
+      <div class="chips">
+        <span class="sk">ML Fundamentals</span>
+        <span class="sk">Scikit-learn</span>
+        <span class="sk">OpenCV</span>
+        <span class="sk">Pandas</span>
+        <span class="sk">NumPy</span>
+        <span class="sk">Matplotlib</span>
+      </div>
+    </div>
+
+    <div class="glass skill-panel reveal">
+      <div class="panel-head">
+        <span class="panel-icon">🔐</span>
+        <span class="panel-title t-amber">Cybersecurity</span>
+      </div>
+      <div class="chips">
+        <span class="sk s-amber">Ethical Hacking</span>
+        <span class="sk s-amber">Network Security</span>
+        <span class="sk s-amber">Kali Linux</span>
+        <span class="sk s-amber">Linux</span>
+        <span class="sk s-amber">VirtualBox</span>
+      </div>
+    </div>
+
+    <div class="glass skill-panel reveal">
+      <div class="panel-head">
+        <span class="panel-icon">🛠</span>
+        <span class="panel-title t-green">Tools</span>
+      </div>
+      <div class="chips">
+        <span class="sk s-green">Git &amp; GitHub</span>
+        <span class="sk s-green">Google Colab</span>
+        <span class="sk s-green">VS Code</span>
+        <span class="sk s-green">VirtualBox</span>
+        <span class="sk s-green">Kali Linux</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     EDUCATION & ACHIEVEMENTS
+══════════════════════════ -->
+<section id="education">
+  <div class="sec-head reveal">
+    <span class="sec-id">// 03</span>
+    <h2 class="sec-title">Education &amp; Achievements</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="glass edu-card reveal">
+    <div class="edu-ico">🎓</div>
+    <div>
+      <div class="edu-degree">Bachelor of Technology — B.Tech</div>
+      <div class="edu-field">Computer Science &amp; Engineering</div>
+      <div class="edu-inst">School of Engineering &amp; Technology &nbsp;·&nbsp; Nagaland University</div>
+      <span class="edu-badge">2023 — Expected 2027</span>
+    </div>
+  </div>
+
+  <div class="ach-grid">
+    <div class="glass ach-card a-green reveal">
+      <div class="ach-icon">🤖</div>
+      <div>
+        <div class="ach-title">AI System Builder</div>
+        <div class="ach-desc">Built real-time Face Recognition Attendance System using OpenCV and ML algorithms.</div>
+      </div>
+    </div>
+    <div class="glass ach-card a-cyan reveal">
+      <div class="ach-icon">📊</div>
+      <div>
+        <div class="ach-title">ML Projects</div>
+        <div class="ach-desc">Multiple end-to-end ML systems — prediction models and classification pipelines.</div>
+      </div>
+    </div>
+    <div class="glass ach-card a-amber reveal">
+      <div class="ach-icon">🔐</div>
+      <div>
+        <div class="ach-title">Security Enthusiast</div>
+        <div class="ach-desc">Hands-on with Kali Linux, ethical hacking basics, and network security fundamentals.</div>
+      </div>
+    </div>
+    <div class="glass ach-card a-mag reveal">
+      <div class="ach-icon">🌐</div>
+      <div>
+        <div class="ach-title">Full Stack Dev</div>
+        <div class="ach-desc">Built complete web apps — from responsive UI to secure PHP/MySQL backend auth.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="int-row reveal">
+    <div class="glass int-chip"><span class="ic">🌐</span> Full Stack</div>
+    <div class="glass int-chip"><span class="ic">🤖</span> AI / ML</div>
+    <div class="glass int-chip"><span class="ic">🔐</span> Cybersecurity</div>
+    <div class="glass int-chip"><span class="ic">⚙️</span> Backend Dev</div>
+    <div class="glass int-chip"><span class="ic">💡</span> Software Dev</div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     CONTACT
+══════════════════════════ -->
+<section id="contact">
+  <div class="sec-head reveal">
+    <span class="sec-id">// 04</span>
+    <h2 class="sec-title">Contact</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="contact-head reveal">Let's Connect</div>
+  <p class="contact-sub reveal">Open to internships, collaborations &amp; exciting projects.</p>
+
+  <div class="contact-grid reveal">
+    <a href="mailto:adarshvishwakarma9305@gmail.com" class="glass c-card cc-cyan">
+      <div>
+        <span class="c-lbl">Email</span>
+        <span class="c-val">adarshvishwakarma9305@gmail.com</span>
+      </div>
+    </a>
+    <a href="https://github.com/ADARSH-VISHWAKARMA91" target="_blank" rel="noopener" class="glass c-card cc-amber">
+      <div>
+        <span class="c-lbl">Source Code</span>
+        <span class="c-val">GitHub</span>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/adarsh-vishwakarma-7965b6385/" target="_blank" rel="noopener" class="glass c-card cc-mag">
+      <div>
+        <span class="c-lbl">Professional</span>
+        <span class="c-val">LinkedIn</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     FOOTER
+══════════════════════════ -->
+<footer>
+  <span>© 2025 Adarsh Vishwakarma</span>
+  <span class="footer-brand">ADARSH.DEV</span>
+  <a href="#hero">↑ top</a>
+</footer>
+
+
+<!-- ══════════════════════════
+     JAVASCRIPT
+══════════════════════════ -->
+<script>
+/* ── Canvas: particles + grid + glow orbs ── */
+(function(){
+  const cv  = document.getElementById('bg-canvas');
+  const ctx = cv.getContext('2d');
+  let W, H;
+  const resize = () => { W = cv.width = innerWidth; H = cv.height = innerHeight; };
+  resize();
+  window.addEventListener('resize', resize);
+
+  const pts = Array.from({length:60}, () => ({
+    x:  Math.random() * innerWidth,
+    y:  Math.random() * innerHeight,
+    vx: (Math.random() - .5) * .28,
+    vy: (Math.random() - .5) * .28,
+    r:  Math.random() * 1.3 + .3,
+    lf: Math.random() * Math.PI * 2,
+    hue:[180, 150, 320, 45][Math.floor(Math.random() * 4)]
+  }));
+
+  const ORBS = [
+    {rx:.1,  ry:.15, r:380, rgb:'0,229,255'},
+    {rx:.9,  ry:.55, r:300, rgb:'255,0,170'},
+    {rx:.5,  ry:.92, r:260, rgb:'0,255,136'},
+    {rx:.75, ry:.1,  r:200, rgb:'255,204,0'}
+  ];
+
+  function draw(){
+    ctx.clearRect(0, 0, W, H);
+
+    ORBS.forEach(o => {
+      const g = ctx.createRadialGradient(W*o.rx, H*o.ry, 0, W*o.rx, H*o.ry, o.r);
+      g.addColorStop(0, `rgba(${o.rgb},.05)`);
+      g.addColorStop(1, `rgba(${o.rgb},0)`);
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(W*o.rx, H*o.ry, o.r, 0, Math.PI*2); ctx.fill();
+    });
+
+    ctx.strokeStyle = 'rgba(0,229,255,.025)'; ctx.lineWidth = 1;
+    for(let x=0; x<W; x+=65){ ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
+    for(let y=0; y<H; y+=65){ ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+
+    pts.forEach(p => {
+      p.x += p.vx; p.y += p.vy; p.lf += .003;
+      if(p.x < 0 || p.x > W) p.vx *= -1;
+      if(p.y < 0 || p.y > H) p.vy *= -1;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = `hsla(${p.hue},100%,60%,${.28 + .18*Math.sin(p.lf)})`; ctx.fill();
+    });
+
+    pts.forEach((a, i) => {
+      for(let j = i+1; j < pts.length; j++){
+        const b = pts[j], d = Math.hypot(a.x-b.x, a.y-b.y);
+        if(d < 105){
+          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+          ctx.strokeStyle = `rgba(0,229,255,${.09*(1-d/105)})`;
+          ctx.lineWidth = .5; ctx.stroke();
+        }
+      }
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── Custom Cursor ── */
+const cur   = document.getElementById('cur');
+const trail = document.getElementById('cur-trail');
+let mx=0, my=0, tx=0, ty=0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function loop(){
+  cur.style.left   = mx + 'px'; cur.style.top   = my + 'px';
+  tx += (mx - tx) * .13;        ty += (my - ty) * .13;
+  trail.style.left = tx + 'px'; trail.style.top = ty + 'px';
+  requestAnimationFrame(loop);
+})();
+if(window.matchMedia('(pointer:coarse)').matches){
+  cur.style.display   = 'none';
+  trail.style.display = 'none';
+  document.body.style.cursor = 'auto';
+}
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => { cur.style.width='14px'; cur.style.height='14px'; trail.style.width='46px'; trail.style.height='46px'; });
+  el.addEventListener('mouseleave', () => { cur.style.width='8px';  cur.style.height='8px';  trail.style.width='30px'; trail.style.height='30px'; });
+});
+
+/* ── Nav scroll ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 20);
+});
+
+/* ── Hamburger ── */
+const ham    = document.getElementById('ham');
+const drawer = document.getElementById('drawer');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('open');
+  drawer.classList.toggle('open');
+});
+function closeDrawer(){
+  ham.classList.remove('open');
+  drawer.classList.remove('open');
+}
+
+/* ── Scroll reveal ── */
+const io = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if(e.isIntersecting) setTimeout(() => e.target.classList.add('up'), i * 60);
+  });
+}, { threshold: .07 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
